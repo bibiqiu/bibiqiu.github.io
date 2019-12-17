@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>你好，世界！</title>
-    <url>/2019/12/16/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%EF%BC%81/</url>
-    <content><![CDATA[<h2 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h2><p>2019-12-16 20:06:31 星期一</p>
-<p>这里是我的第一个博客里的第一篇文章</p>
-<p><del>也不知道写点什么好</del></p>
-<p><del>虽然不是同一个时间 但是同一个厕所 今天老八就再次挑战吃粑粑</del></p>
-<p>总之 国际惯例 </p>
-<p>Hello World ！</p>
+    <title>机器学习（一）初识机器学习</title>
+    <url>/2019/12/17/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%E5%88%9D%E8%AF%86%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="机器学习-Machine-Learning"><a href="#机器学习-Machine-Learning" class="headerlink" title="机器学习 Machine Learning"></a>机器学习 Machine Learning</h1><hr>
+<h6 id="关于这玩意儿-百度是这样说的"><a href="#关于这玩意儿-百度是这样说的" class="headerlink" title="关于这玩意儿 百度是这样说的"></a>关于这玩意儿 百度是这样说的</h6><blockquote>
+</blockquote>
+<p>(1) 机器学习是一门<strong>人工智能</strong>的科学,该领域的主要研究对象是人工智能，特别是如何在经验学习中改善具体算法的性能。</p>
+<blockquote>
+</blockquote>
+<p>(2) 机器学习是对能通过经验<strong>自动改进</strong>的计算机算法的研究。</p>
+<blockquote>
+</blockquote>
+<p>(3) 机器学习是<strong>用数据或以往的经验</strong>,以此<strong>优化计算机程序</strong>的性能标准。</p>
+<p>总结来说，应用机器学习的算法，计算机会变得越来越“聪明”:tw-1f649:<br>这会使它在解决某类问题上越来越得心应手。</p>
+<h4 id="机器学习的简单分类"><a href="#机器学习的简单分类" class="headerlink" title="机器学习的简单分类"></a>机器学习的简单分类</h4><hr>
+<p>大体上，机器学习算法可根据要解决问题的性质分为两大类：</p>
+<ul>
+<li>监督学习</li>
+<li>无监督学习</li>
+</ul>
+<p>至于那些别的 <del>牛鬼蛇神</del> 名称 大致都是换汤不换药，总体上还是能归到这两类上面。</p>
+<hr>
+<h5 id="·监督学习-Supervise"><a href="#·监督学习-Supervise" class="headerlink" title="·监督学习  Supervise"></a>·监督学习  Supervise</h5><hr>
+<p>所谓监督，就是在<strong>人为的制定条条框框下</strong>训练计算机，使它在我们给定的所谓 “正确” 和 “错误” 之下学习。</p>
+<p>也就是说，我们扔给计算机<strong>一坨已经明确的数据</strong>，让它根据这些明确的数据来建立起的 <strong>“价值观”</strong>（做个形象的比喻哈），并以此对 尚未判明的数据进行分析，并给出答案。</p>
+<p>举个栗子，王小明是 <del>隔壁老王的</del> 一个懵懂的小孩子，因为到了 <del>学习魔法</del> 上学的年纪，父母也忙，不能天天亲自接送小明上下学。为了能让小明学会独立上下学 <del>，并在环境险恶的QQ看点评论区生存下去，</del> 他爸爸妈妈决定教育小明：</p>
+<blockquote>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:tw-1f481:  小明啊,长这样的呢 （ 请脑补警察） 是警察叔叔，是好人，有什么问题可以寻求他的帮助</p>
+<blockquote>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:tw-1f481: 小明啊,而长这样的呢（ 请脑补恶魔 ）  是魔鬼，是坏人，看到了就要远离他</p>
+<p>于是小明在妈妈的教育下，学会了辨别 <strong>警察叔叔</strong> 和 <strong>魔鬼</strong> 。</p>
+<p>不难看出，小明能辨别 警察 和 魔鬼 ，甚至在继续学习某些特点之后能辨别 武警 和 幽灵 ，是因为他妈妈教授之后的结果，也就是说，小明实在妈妈的<strong>监督</strong>下学会的。</p>
+<h6 id="看一个实际应用吧（笑"><a href="#看一个实际应用吧（笑" class="headerlink" title="看一个实际应用吧（笑"></a>看一个实际应用吧（笑</h6><p>假如你的好友** <del>撒旦</del>** 想要毁灭世界，他决定通过买下全世界的房地产，试图以此让地球上所有人都因为无房可住而惨死街头。但有个急切的问题摆在 <del>撒旦</del> 面前——资金不足。于是他向你求助，想让你想出一个完美的办法以解决这个问题。</p>
+<p>已知房价是会变动的，聪明的你一定会想到每次在淡季买房是最佳选择。但由于房价实时变动，不可能每分每秒都在记录这个价格，于是，你选择记录少量样本。</p>
+<p><img src="/post-picture/house_price_dispersed.png" alt="房价离散图"></p>
+<p>从图中可以发现这些房价似乎在有规律的波动，你想要的找出这种波动，于是你立马想到了<strong>线性回归的方法！</strong></p>
+<p><img src="/post-picture/house_price_linear.png" alt="线性回归曲线"></p>
+<p>这样一来，你就能近似把握每分每秒的房价价格了！</p>
+<p>你把这张图分享给撒旦，他看了后非常的满意。你们的 <del>基情</del> <strong>友情</strong> 便更上一层楼了，真是可喜可贺呀。</p>
+<hr>
+<p>但是…总感觉少了什么..</p>
+<p>我靠？！这TM和机器学习有个半毛钱关系啊？</p>
+<p>稍安勿躁，其实在应用<strong>线性回归</strong>的过程中，你就在不经意间使用了机器学习：</p>
+<p>这里的 <strong>房价</strong> 是不是已经明确了？ 这就是输入的<strong>明确的数据集</strong>！<br>而<strong>线性回归方程</strong>是不是根据那些<strong>明确的房价</strong>的出来的？ 这就是<strong>监督</strong>！</p>
+<p>在得出回归方程之后，我们是不是可以预测一些未知的时刻的房价？</p>
+<p>Ok，这就是一个完整的监督学习过程了。</p>
+<p>这真是难以置信，不是吗？</p>
+<hr>
+<p>无监督学习暂时还没有学到，现学现卖的博客咯</p>
+<p>继续学习去了</p>
 ]]></content>
       <tags>
-        <tag>测试</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
 </search>
